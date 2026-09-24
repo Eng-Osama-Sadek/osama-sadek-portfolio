@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+html{scroll-behavior:smooth}body{background:#05050A;color:#E2E8F0;line-height:1.75}
+.grad{background:linear-gradient(90deg,#6366F1,#A855F7,#EC4899,#00F5FF,#6366F1);background-size:300% 100%;-webkit-background-clip:text;color:transparent;animation:g 3s linear infinite}
+@keyframes g{to{background-position:300% 0}}
+.aurora{position:absolute;width:520px;height:520px;border-radius:50%;filter:blur(120px);opacity:.25;animation:f 20s ease-in-out infinite alternate}
+@keyframes f{to{transform:translate(80px,60px) scale(1.2)}}
+:focus-visible{outline:2px solid #A855F7;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
